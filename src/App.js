@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import ProductList from './components/ProductList';
+import BucketList from './components/BucketList';
 
 class App extends Component {
   render() {
     return (
       <div className="container">
-        <h1>Backblaze Products</h1>
-        <ProductList />
+        <h1>Backblaze</h1>
+        <BucketList />
       </div>
     );
   }
