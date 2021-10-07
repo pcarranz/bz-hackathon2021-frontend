@@ -1,12 +1,12 @@
 import axios from 'axios'
 
-const PRODUCT_LIST_API_URL = 'http://localhost:8080/bz/products'
 const LIST_BUCKETS_API_URL = 'http://localhost:8080/b2/buckets'
+const GET_APP_CONFIG_URL = 'http://localhost:8080/getConfigFromValue'
 
 class Service {
 
-    retrieveAllProductNames() {
-        return axios.get(`${PRODUCT_LIST_API_URL}`);
+    getAppConfig() {
+        return axios.get(`${GET_APP_CONFIG_URL}`);
     }
 
     listBuckets() {
