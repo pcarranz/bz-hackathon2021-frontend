@@ -4,7 +4,7 @@ class BucketCard extends Component {
 
     render() {
         return (
-            <div className="card" style={{ width: '18rem' }}>
+            <div className="card mx-2 mb-2" style={{ width: '18rem' }}>
                 <div className="card-body">
                     <h5 className="card-title">{this.props.bucket.bucketName}</h5>
                     {this.props.bucket.bucketType === "allPublic" &&
@@ -13,8 +13,7 @@ class BucketCard extends Component {
                         <h6 className="card-subtitle mb-2 text-muted">Private</h6>}
                     {this.props.bucket.bucketType === "snapshot" &&
                         <h6 className="card-subtitle mb-2 text-muted">Snapshot</h6>}
-                    {/* <p>{this.props.bucket.}</p> */}
-                    {this.props.renderFilesButton && <a href="#" className="btn btn-primary">View Files</a>}
+                    {this.props.renderFilesButton && <a href="#" className="card-link">View Files</a>}
                 </div>
             </div>
         )
